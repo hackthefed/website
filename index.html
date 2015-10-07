@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<title>HackTheFed</title>
 	<meta charset="utf-8">
@@ -10,55 +11,73 @@
   <meta property="og:title"         content="Hack The Fed" />
   <meta property="og:description"   content="Applying the Hacker Ethic to the Federal Record." />
   <meta property="og:image"         content="http://www.hackthefed.org/images/HackTheFed.png" />
+	<style>
+	</style>
 </head>
 <body>
-<header>
-	<img src="/images/hackthefed_wide.png" alt="HackTheFed" width="554" height="89">
-</header>
-<div>
-	<h1>
-		Applying the <a href="https://en.wikipedia.org/wiki/Hacker_ethic">Hacker Ethic</a> to the Federal Record.
-	</h1>
-	<p>
-		Since 1972 5% of the legislation produced by congress has been enacted into law. We do not claim that this
-		is good or bad but we want to understand why. How does the Fed work, what makes it tick, what does
-		it actualy care about? Over the last few years many data sources have become avaliable;
-		<a href="http://sunlightfoundation.com/">The Sunlight Foundation</a>,
-		<a href="http://govtrack.us">govtrack.us</a>, <a href="https://www.opensecrets.org/">Open Secrets</a>,
-		have given us unprecidented access to government data, but
-		that data is massive and largely meaningless until somebody begins to make sense of it. As hackers
-		we believe that analyzing this data is best done in the open, by people who can check each others
-		work, criticize each others methods, and help each other out. And so we hope you will join in and
-		help us HackTheFed.
-	</p>
-</div>
-<div>
-<h2>Current Projects</h2>
-	<ul>
-		<li>
-			<a href="https://github.com/hackthefed/govtrack2csv">govtrack2csv</a><br>
-			Tools for converting govtrack.us bulk data into a  tabular format more usable by
-			tools from excel to R.
 
-		</li>
-		<li>
-			<a href="https://hub.docker.com/r/hackthefed/python-datakit/">python-datakit</a><br>
-			A docker image designed for doing datascience on in python.
-		</li>
-	</ul>
-	<h2>Where to find us</h2>
-	<ul>
-		<li><a href="https://github.com/hackthefed/">GitHub</a></li>
-		<li><a href="https://hub.docker.com/r/hackthefed/">DockerHub</a></li>
-		<li><a href="https://www.pivotaltracker.com/n/projects/1426708">Pivitol Tracker</a></li>
-		<li><a href="https://facebook.com/hackthefed/">Facebook</a></li>
-		<li><a href="https://twitter.com/hackthefed">Twitter</a></li>
-		<li><a href="https://https://hackthefed.slack.com">Slack</a></li>
-	</ul>
+<div class="container" style="width:80%; margin:auto">
+	<div class="row">
+		<header class="col-md-4">
+			<img src="images/htf-logo-final.png" alt="HackTheFed" style="display:block; width:100%; margin:auto;">
+			<div style="width:80%; margin-left:50px;">
+				<h4>Where to find us</h4>
+				<ul>
+					<li><a href="https://github.com/hackthefed/">GitHub</a></li>
+					<li><a href="https://hub.docker.com/r/hackthefed/">DockerHub</a></li>
+					<li><a href="https://www.pivotaltracker.com/n/projects/1426708">Pivitol Tracker</a></li>
+					<li><a href="https://facebook.com/hackthefed/">Facebook</a></li>
+					<li><a href="https://twitter.com/hackthefed">Twitter</a></li>
+					<li><a href="https://https://hackthefed.slack.com">Slack</a></li>
+				</ul>
+			</div>
+		</header>
+		<main class="col-md-8">
+			<h1 style="margin:60px 0px">
+				Applying the <a href="https://en.wikipedia.org/wiki/Hacker_ethic">Hacker Ethic</a> to the Federal Record.
+			</h1>
+				<p>
+					Since 1972 5% of the legislation produced by congress has been enacted into law. We do not claim that this
+					is good or bad but we want to understand why. How does the Fed work, what makes it tick, what does
+					it actualy care about? Over the last few years many data sources have become avaliable;
+					<a href="http://sunlightfoundation.com/">The Sunlight Foundation</a>,
+					<a href="http://govtrack.us">govtrack.us</a>, <a href="https://www.opensecrets.org/">Open Secrets</a>,
+					have given us unprecidented access to government data, but
+					that data is massive and largely meaningless until somebody begins to make sense of it. As hackers
+					we believe that analyzing this data is best done in the open, by people who can check each others
+					work, criticize each others methods, and help each other out. And so we hope you will join in and
+					help us HackTheFed.
+				</p>
+				<h2>Current Projects</h2>
+				<ul>
+					<li>
+						<a href="https://github.com/hackthefed/govtrack2csv">govtrack2csv</a><br>
+						Tools for converting govtrack.us bulk data into a  tabular format more usable by
+						tools from excel to R.
+
+					</li>
+					<li>
+						<a href="https://hub.docker.com/r/hackthefed/python-datakit/">python-datakit</a><br>
+						A docker image designed for doing datascience on in python.
+					</li>
+					<li>
+						<a href="/zip/congress_csv.tbz">Congression Data (105 MB bzip2)</a><br>
+						This is the output of govtrack2csv. It is one folder for each congress +
+						all of the legislators and committess that govtrack has on record.
+						The data is all in indexed csv files suitable for import into DataFrames.
+						The data has been tested in Pandas, if you use R or other tools please
+						let us know if you experience issues.
+					</li>
+				</ul>
+		</main>
+		<footer class="row">
+			<p class="text-center" class="col-md-12">
+				CopyLeft HackTheFed 2015
+			</p>
+		</footer>
+
+	</div>
 </div>
-<footer>
-CopyLeft Vance Dubberly 2015
-</footer>
 
 
 <script>
